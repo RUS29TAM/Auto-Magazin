@@ -1,11 +1,11 @@
 .page {
-  background-color: wheat;
+  background-color: rgb(255, 242, 218);
   width: 100%;
   display: grid;
   grid-template-rows: 6fr;
   grid-template-areas:
     "header"
-    "main"
+    "content"
     "section-1"
     "section-2"
     "section-3"
