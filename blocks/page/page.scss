@@ -1,5 +1,5 @@
 .page {
-  background-color: rgb(255, 242, 218);
+  background-color: rgba(198, 231, 171, 0.37);
   width: 100%;
   display: grid;
   grid-template-rows: 6fr;
@@ -11,4 +11,5 @@
     "section-3"
     "footer";
   justify-content: center;
+  color: white;
 }

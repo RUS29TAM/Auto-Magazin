@@ -2,4 +2,5 @@
 @import url(../vendor/fonts.css);
 @import '../vendor/nullstyle.css';
 @import '../blocks/page/page.css';
-@import '../blocks/header/header.css';/*# sourceMappingURL=index.css.map */
+@import '../blocks/header/header.css';
+@import '../blocks/content/content.css';/*# sourceMappingURL=index.css.map */
