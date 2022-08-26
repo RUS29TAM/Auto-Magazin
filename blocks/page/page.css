@@ -1,0 +1,8 @@
+.page {
+  background-color: wheat;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 6fr;
+  grid-template-areas: "header" "main" "section-1" "section-2" "section-3" "footer";
+  justify-content: center;
+}/*# sourceMappingURL=page.css.map */
