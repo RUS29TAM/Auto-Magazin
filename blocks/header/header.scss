@@ -58,15 +58,21 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  &__links {
+    margin-right: 35px;
+    visibility: visible;
+  }
+}
+
 @media screen and (max-width: 1439px) {
   .header {
     grid-area: header;
     width: 768px;
 
     &__links {
-     margin-right: 35px;
-     visibility: hidden;
-
+      margin-right: 35px;
+      visibility: hidden;
     }
 
     &__block {
@@ -128,6 +134,51 @@
     &__burger-button > span::after {
       content: "";
       top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: 320px;
+
+    &__logo {
+      width: 100px;
+      height: 20px;
+      position: absolute;
+      margin-left: 110px;
+      // margin-left: 0;
+      // margin-right: 0;
+    }
+
+    &__block {
+      max-width: 320px;
+      margin: 0;
+    }
+
+    &__links {
+      gap: 16px;
+      font-size: 11px;
+      line-height: 16px;
+      margin: 0;
+    }
+
+    &__link {
+      margin-right: 15px;
+    }
+
+    &__nav {
+      margin-left: 20px;
+    }
+
+    &__burger {
+      margin: 0;
+    }
+
+    &__burger-button > span,
+    &__burger-button > span::before,
+    &__burger-button > span::after {
+      width: 20px;
     }
   }
 }
