@@ -112,4 +112,37 @@
     content: "";
     top: 10px;
   }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    width: 320px;
+  }
+  .header__logo {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    margin-left: 110px;
+  }
+  .header__block {
+    max-width: 320px;
+    margin: 0;
+  }
+  .header__links {
+    gap: 16px;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+  }
+  .header__link {
+    margin-right: 15px;
+  }
+  .header__nav {
+    margin-left: 20px;
+  }
+  .header__burger {
+    margin: 0;
+  }
+  .header__burger-button > span, .header__burger-button > span::before, .header__burger-button > span::after {
+    width: 20px;
+  }
 }/*# sourceMappingURL=header.css.map */
