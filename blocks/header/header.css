@@ -1,0 +1,38 @@
+.header {
+  grid-area: header;
+  width: 1440px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: #191d2c;
+  display: flex;
+  box-sizing: border-box;
+}
+.header__block {
+  width: 762px;
+  max-height: 70px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__links {
+  display: flex;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  gap: 20px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  list-style: none;
+}
+.header__link {
+  color: #e1fd2c;
+  text-decoration: none;
+}
+.header__link:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=header.css.map */
