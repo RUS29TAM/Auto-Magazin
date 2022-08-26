@@ -19,6 +19,7 @@
 
   &__logo {
     margin-left: 390px;
+    visibility: visible;
   }
   &__links {
     display: flex;
@@ -42,6 +43,10 @@
     opacity: 0.6;
   }
 
+  &__burger {
+    margin-right: 35px;
+  }
+
   &__burger-toggle {
     height: 0;
     margin: 0;
@@ -56,9 +61,10 @@
     grid-area: content;
     width: 768px;
 
-    &__link {
-      display: none;
-      margin-right: 35px;
+    &__links {
+     margin-right: 35px;
+     visibility: hidden;
+
     }
 
     &__block {
@@ -109,7 +115,7 @@
       height: 2px;
       background-color: #e1fd2c;
       position: absolute;
-      transition-duration: 0.10s;
+      transition-duration: 0.1s;
     }
 
     &__burger-button > span::before {

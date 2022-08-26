@@ -18,6 +18,7 @@
 }
 .header__logo {
   margin-left: 390px;
+  visibility: visible;
 }
 .header__links {
   display: flex;
@@ -40,6 +41,9 @@
 .header__link:hover {
   opacity: 0.6;
 }
+.header__burger {
+  margin-right: 35px;
+}
 .header__burger-toggle {
   height: 0;
   margin: 0;
@@ -53,9 +57,9 @@
     grid-area: content;
     width: 768px;
   }
-  .header__link {
-    display: none;
+  .header__links {
     margin-right: 35px;
+    visibility: hidden;
   }
   .header__block {
     width: 768px;
