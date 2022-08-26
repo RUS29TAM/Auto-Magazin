@@ -1,11 +1,12 @@
 .header {
-  grid-area: header;
+  grid-area: content;
   width: 1440px;
   height: 70px;
   margin: 0 auto;
   background-color: #191d2c;
   display: flex;
   box-sizing: border-box;
+  align-items: center;
 
   &__block {
     width: 762px;
@@ -14,6 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__logo {
+    margin-left: 390px;
   }
   &__links {
     display: flex;
@@ -28,7 +33,6 @@
     text-transform: uppercase;
     box-sizing: border-box;
     list-style: none;
-
   }
   &__link {
     color: #e1fd2c;
@@ -36,5 +40,86 @@
   }
   &__link:hover {
     opacity: 0.6;
+  }
+
+  &__burger-toggle {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .header {
+    grid-area: content;
+    width: 768px;
+
+    &__link {
+      display: none;
+      margin-right: 35px;
+    }
+
+    &__block {
+      width: 768px;
+      margin-right: 232px;
+    }
+
+    &__logo {
+      margin-left: 0;
+    }
+    &__burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__burger:hover {
+      transform: (45deg);
+    }
+
+    &__burger-toggle:checked ~ &__burger-button > span {
+      transform: rotate(45deg);
+    }
+    &__burger-toggle:checked ~ &__burger-button > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    &__burger-toggle:checked ~ &__burger-button > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    &__burger-button {
+      display: flex;
+      align-items: center;
+      width: 25px;
+      height: 20px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    &__burger-button > span,
+    &__burger-button > span::before,
+    &__burger-button > span::after {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: #e1fd2c;
+      position: absolute;
+      transition-duration: 0.25s;
+    }
+
+    &__burger-button > span::before {
+      content: "";
+      top: -10px;
+    }
+
+    &__burger-button > span::after {
+      content: "";
+      top: 10px;
+    }
   }
 }

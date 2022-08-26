@@ -1,8 +1,8 @@
 .page {
-  background-color: wheat;
+  background-color: rgb(255, 242, 218);
   width: 100%;
   display: grid;
   grid-template-rows: 6fr;
-  grid-template-areas: "header" "main" "section-1" "section-2" "section-3" "footer";
+  grid-template-areas: "header" "content" "section-1" "section-2" "section-3" "footer";
   justify-content: center;
 }/*# sourceMappingURL=page.css.map */
