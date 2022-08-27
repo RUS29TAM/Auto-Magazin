@@ -1,15 +1,15 @@
 .page {
-  background-color: rgba(198, 231, 171, 0.37);
+  background-color: #191d2c41;
   width: 100%;
-  display: grid;
-  grid-template-rows: 6fr;
-  grid-template-areas:
-    "header"
-    "content"
-    "section-1"
-    "section-2"
-    "section-3"
-    "footer";
+  display: block;
+  // grid-template-rows: 6fr;
+  // grid-template-areas:
+  //   "header"
+  //   "content"
+  //   "description"
+  //   "section-2"
+  //   "section-3"
+  //   "footer";
   justify-content: center;
   color: white;
 }

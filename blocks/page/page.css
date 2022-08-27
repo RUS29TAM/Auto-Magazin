@@ -1,9 +1,7 @@
 .page {
-  background-color: rgba(198, 231, 171, 0.37);
+  background-color: rgba(25, 29, 44, 0.2549019608);
   width: 100%;
-  display: grid;
-  grid-template-rows: 6fr;
-  grid-template-areas: "header" "content" "section-1" "section-2" "section-3" "footer";
+  display: block;
   justify-content: center;
   color: white;
 }/*# sourceMappingURL=page.css.map */

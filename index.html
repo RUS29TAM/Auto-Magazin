@@ -13,41 +13,76 @@
     <meta name="descrition" content="Auto-Magazin" />
     <meta name="autor" content="Рустам Никончук" />
     <title>Auto-Magazin</title>
-</head>
-<body class="page">
-<!--Header-->
-<header class="header">
-  <div class="header__block">
-    <nav class="header__nav">
-      <ul class="header__links">
-        <li><a href="#" class="header__link">Факты</a></li>
-        <li><a href="#" class="header__link">Галерея</a></li>
-        <li><a href="#" class="header__link">Пресса</a></li>
-      </ul>
-    </nav>
-    <img
-      src="./images/logo.svg"
-      class="header__logo"
-      alt="Auto-Magazin"
-    />
-  </div>
-  <div class="header__burger">
-    <input class="header__burger-toggle" id="burger-toggle" type="checkbox">
-    <label class="header__burger-button header__link" for="burger-toggle">
-      <span></span>
-    </label>
-  </div>
-</header>
-<section class="content">
-<div class="content__text">
-  <h3 class="content__heading">volkswagen T1</h3>
-  <p class="content__title">Новая версия популярного микроавтобуса</p>
-  <p class="content__subtitle">с электро двигателем</p>
-<button class="button content__button" type="button" id="main-btn">подробнее</button>
+  </head>
+  <body class="page">
+    <!--Header-->
+    <header class="header">
+      <div class="header__block">
+        <nav class="header__nav">
+          <ul class="header__links">
+            <li><a href="#" class="header__link">Факты</a></li>
+            <li><a href="#" class="header__link">Галерея</a></li>
+            <li><a href="#" class="header__link">Пресса</a></li>
+          </ul>
+        </nav>
+        <img src="./images/logo.svg" class="header__logo" alt="Auto-Magazin" />
+      </div>
+      <div class="header__burger">
+        <input
+          class="header__burger-toggle"
+          id="burger-toggle"
+          type="checkbox"
+        />
+        <label class="header__burger-button header__link" for="burger-toggle">
+          <span></span>
+        </label>
+      </div>
+    </header>
+    <section class="content">
+      <div class="content__text">
+        <h3 class="content__heading">volkswagen T1</h3>
+        <p class="content__title">Новая версия популярного микроавтобуса</p>
+        <p class="content__subtitle">с электро двигателем</p>
+        <button class="button content__button" type="button" id="main-btn">
+          подробнее
+        </button>
+      </div>
+      <div class="content__img"></div>
+    </section>
 
-</div>
-<div class="content__img"></div>
-</section>
-<script src="./pages/index.js"></script>
-</body>
+    <section class="description">
+      <div class="description__main">
+        <p class="description__main-text">
+          <span class="description__main-text-m">VW T1 Electro: </span>
+          Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli:
+          классический вэн T1 1966 года с электрической силовой установкой.
+          По словам производителя, проект получит коммерческое продолжение,
+          и через фирму-партнера eClassics наборы для конверсии микроавтобусов
+          в электрокары и уже готовые машины будут продавать частным клиентам.
+        </p>
+      </div>
+      <!-- <div class="description__features"> -->
+        <div class="description__features-wrapper-p">
+        <div class="description__features-plus-m">Плюсы</div>
+        <ul class="description__features-plus">
+          <li class="description__features-plus">&plus;Экологичный</li>
+          <li class="description__features-plus">&plus;Экономный</li>
+          <li class="description__features-plus">&plus;Тихий</li>
+        </ul>
+      </div>
+
+        <!-- <span class="description__line-v"></span> -->
+<div class="description__features-wrapper-m">
+      <div class="description__features-minus-m">Минусы </div>
+        <ul class="description__features-minus">
+          <li class="description__features-minus">&minus;Дорогой</li>
+          <li class="description__features-minus">&minus;Подарядка</li>
+          <!-- <li class="description__features-minus">&minus;Поздарядка</li> -->
+        </ul>
+      </div>
+      <!-- </div> -->
+      <span class="description__line"></span>
+    </section>
+    <script src="./pages/index.js"></script>
+  </body>
 </html>
