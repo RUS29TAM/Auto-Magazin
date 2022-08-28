@@ -28,25 +28,37 @@
 
 @font-face {
   font-family: 'Source Sans Pro';
-  font-weight: 400;
+  font-weight: 300;
   font-display: swap;
-  src: url(./fonts/source-code-pro-light-2.ttf) format('truetype');
+  src: url(./fonts/SourceSansPro-Light.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
-  src: url(./fonts/source-code-pro-4.ttf) format('truetype');
+  src: url(./fonts/SourceSansPro-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
   font-weight: 600;
   font-display: swap;
-  src: url(./fonts/source-code-pro-black-2.ttf) format('truetype');
+  src: url(./fonts/SourceSansPro-SemiBold.ttf) format('truetype');
 }
 
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  font-display: swap;
+  src: url(./fonts/SourceSansPro-Bold.ttf) format('truetype');
+}
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  font-display: swap;
+  src: url(./fonts/SourceSansPro-Black.ttf) format('truetype');
+}
 
