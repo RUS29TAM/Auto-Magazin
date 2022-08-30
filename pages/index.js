@@ -14,3 +14,10 @@ burgerToggle.addEventListener("change", function () {
   }
 });
 
+
+
+let slider = document.querySelectorAll(".slider__item");
+let btnPrev = document.querySelector('#prev');
+let btnFwd = document.querySelector('#fwd');
+
+

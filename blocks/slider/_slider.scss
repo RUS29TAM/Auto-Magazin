@@ -1,7 +1,113 @@
 .slider {
   width: 1440px;
   height: 687px;
-  background: rgb(65, 65, 3);
+  background: #191d2c;
   margin: 0 auto;
   display: flex;
+
+  &__wrapper {
+    width: 720px;
+    height: 687px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__items {
+    width: 720px;
+    height: 540px;
+    box-sizing: border-box;
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__item_visible {
+    visibility: visible;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    display: unset;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  &__heading {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 46px;
+    color: #e1fd2c;
+  }
+
+  &__btn-wrapper {
+    width: 114px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    margin-right: 50px;
+  }
+}
+
+.button__slider-prev {
+  border: none;
+  width: 42px;
+  height: 34px;
+  background: url(../../images/arrow-prev.svg);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.button__slider-prev:hover {
+  opacity: 0.6;
+}
+
+.button__slider-fwd {
+  border: none;
+  width: 42px;
+  height: 34px;
+  background: url(../../images/arrow-fwd.svg);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.button__slider-fwd:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1439px) {
+  .slider {
+    width: 768px;
+    height: 691px;
+
+    &__wrapper {
+      width: 768px;
+      height: 691px;
+    }
+
+    &__items {
+      width: 700px;
+      height: 510px;
+
+    }
+
+
+
+  }
 }
