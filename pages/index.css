@@ -681,4 +681,101 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
+}
+.press {
+  padding-top: 35px;
+  width: 1440px;
+  height: 687px;
+  background: #191d2c;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: #e1fd2c 1px solid;
+  box-sizing: border-box;
+}
+.press__heading {
+  width: 720px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 46px;
+  color: #e1fd2c;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.press__wrapper {
+  width: 720px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.press__main-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  color: #e1fd2c;
+  margin-top: 50px;
+}
+.press__main-text-m {
+  font-weight: 400;
+}
+.press__button-wrapper {
+  display: flex;
+  width: 720px;
+  justify-content: space-between;
+}
+.press__radio-wpapper {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.press__radio {
+  border: none;
+  cursor: pointer;
+  margin-right: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.press__radio input[type=radio] {
+  display: none;
+}
+.press__radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.press__radio label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(../../images/radio-off.svg) no-repeat;
+}
+.press__radio input[type=radio]:checked + label:before {
+  background: url(../../images/radio-on.svg) no-repeat;
+}
+.press__button-press {
+  border: 1px solid #E1FD2C;
+  width: 110px;
+  height: 52px;
+  border-radius: 50%;
+  background: #191d2c;
+  color: #e1fd2c;
 }/*# sourceMappingURL=index.css.map */
