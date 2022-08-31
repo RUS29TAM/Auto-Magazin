@@ -83,44 +83,64 @@
     <div class="slider">
       <div class="slider__wrapper">
         <div class="slider__items">
-        <img src="./images/wv-a.png" alt="Фольксваген Т-1 едет по дороге" class="slider__item_visible">
-        <img src="./images/wv-b.png" alt="Интерьер Фольксваген Т-1 вид спереди" class="slider__item">
-        <img src="./images/wv-c.png" alt="Интерьер Фольксваген Т-1 вид сзади" class="slider__item">
+          <div class="slider__item">
+            <img class="slider__img" src="./images/wv-a.png" alt="Фольксваген Т-1 едет по дороге" />
+          </div>
+          <div class="slider__item">
+            <img class="slider__img"
+              src="./images/wv-b.png"
+              alt="Интерьер Фольксваген Т-1 вид спереди"
+            />
+          </div>
+          <div class="slider__item">
+            <img class="slider__img"
+              src="./images/wv-c.png"
+              alt="Интерьер Фольксваген Т-1 вид сзади"
+            />
+          </div>
         </div>
         <div class="slider__nav">
-        <h2 class="slider__heading">Галерея</h2>
-        <div class="slider__btn-wrapper">
-          <button class="button button__slider-prev" onclick=go(-1) type="button" id="prev"></button>
-          <button class="button button__slider-fwd" type="button" id="fwd"></button>
-        </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- <div class="slider">
-    <div class="slider__wrapper">
-      <div class="slider__items">
-        <div class="slider__item">
-          <div style="height: 250px; background: #3f51b5;"></div>
-        </div>
-        <div class="slider__item">
-          <div style="height: 250px; background: #607d8b;"></div>
-        </div>
-        <div class="slider__item">
-          <div style="height: 250px; background: #f44336;"></div>
-        </div>
-        <div class="slider__item">
-          <div style="height: 250px; background: #4caf50;"></div>
+          <h2 class="slider__heading">Галерея</h2>
+          <div class="slider__btn-wrapper">
+            <button
+              class="button button__slider-prev"
+              type="button"
+              id="prev"
+            ></button>
+            <button
+              class="button button__slider-fwd"
+              type="button"
+              id="fwd"
+            ></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="btn-wrapper">
-    <button class="btn btn-prev">PREV</button>
-    <button class="btn btn-next">NEXT</button>
-  </div> -->
+    <!--Press-->
+    <!-- <section class="press">
+      <h2 class="press__heading">Пресса</h2>
+      <div class="press__wrapper">
+        <h2 class="press__main-text">
+          <span>Engadget:</span> VW’s e-BULLI concept shows how your classic van
+          can become an EV.
+        </h2>
+        <div class="press__button-wrapper">
+          <div class="form_radio">
+            <input id="radio-1" type="radio" name="radio" value="1" checked />
+            <label for="radio-1">Radio button 1</label>
+          </div>
+          <div class="form_radio">
+            <input id="radio-2" type="radio" name="radio" value="2" />
+            <label for="radio-2">Radio button 2</label>
+          </div>
+          <button class="button button__press" type="button" id="btn-press">
+            Читать
+          </button>
+        </div>
+      </div>
+    </section> -->
+
     <script src="./pages/index.js"></script>
   </body>
 </html>

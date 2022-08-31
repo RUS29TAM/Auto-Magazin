@@ -502,23 +502,35 @@
   }
 }
 .slider {
+  padding-top: 35px;
   width: 1440px;
   height: 687px;
   background: #191d2c;
   margin: 0 auto;
   display: flex;
+  border-bottom: #e1fd2c 1px solid;
 }
 .slider__wrapper {
   width: 720px;
   height: 687px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  box-sizing: border-box;
 }
 .slider__items {
   width: 720px;
   height: 540px;
   box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slider__img {
+  width: 720px;
+  height: 540px;
 }
 .slider__item {
   display: none;
@@ -529,12 +541,16 @@
   background-position: center;
   box-sizing: border-box;
   display: unset;
+  width: 720px;
+  height: 540px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider__nav {
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
-  margin-bottom: 50px;
+  margin-top: 50px;
   align-items: center;
   margin-left: 50px;
 }
@@ -591,7 +607,7 @@
 @media screen and (max-width: 1439px) {
   .slider {
     width: 768px;
-    height: 691px;
+    height: 656px;
   }
   .slider__wrapper {
     width: 768px;
@@ -600,5 +616,69 @@
   .slider__items {
     width: 700px;
     height: 510px;
+  }
+  .slider__img {
+    width: 700px;
+    height: 510px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 320px;
+    padding-top: 20px;
+  }
+  .slider__wrapper {
+    width: 320px;
+    height: 320px;
+  }
+  .slider__nav {
+    margin-left: 20px;
+  }
+  .slider__heading {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #e1fd2c;
+  }
+  .slider__items {
+    width: 280px;
+    height: 204px;
+  }
+  .slider__img {
+    width: 280px;
+    height: 204px;
+  }
+  .slider__btn-wrapper {
+    width: 64px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .slider__item_visible {
+    width: 280px;
+    height: 204px;
+  }
+  .button__slider-prev {
+    border: none;
+    width: 24px;
+    height: 20px;
+    background: url(../../images/arrow-prev.svg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .button__slider-fwd {
+    border: none;
+    width: 24px;
+    height: 20px;
+    background: url(../../images/arrow-fwd.svg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=index.css.map */
