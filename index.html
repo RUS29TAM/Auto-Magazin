@@ -78,22 +78,27 @@
         </ul>
       </div>
     </section>
-
     <!--Slider-->
     <div class="slider">
       <div class="slider__wrapper">
         <div class="slider__items">
           <div class="slider__item">
-            <img class="slider__img" src="./images/wv-a.png" alt="Фольксваген Т-1 едет по дороге" />
+            <img
+              class="slider__img"
+              src="./images/wv-a.png"
+              alt="Фольксваген Т-1 едет по дороге"
+            />
           </div>
           <div class="slider__item">
-            <img class="slider__img"
+            <img
+              class="slider__img"
               src="./images/wv-b.png"
               alt="Интерьер Фольксваген Т-1 вид спереди"
             />
           </div>
           <div class="slider__item">
-            <img class="slider__img"
+            <img
+              class="slider__img"
               src="./images/wv-c.png"
               alt="Интерьер Фольксваген Т-1 вид сзади"
             />
@@ -103,12 +108,12 @@
           <h2 class="slider__heading">Галерея</h2>
           <div class="slider__btn-wrapper">
             <button
-              class="button button__slider-prev"
+              class="button btn-prev"
               type="button"
               id="prev"
             ></button>
             <button
-              class="button button__slider-fwd"
+              class="button btn-fwd"
               type="button"
               id="fwd"
             ></button>
@@ -116,33 +121,78 @@
         </div>
       </div>
     </div>
-
     <!--Press-->
     <section class="press">
       <h2 class="press__heading">Пресса</h2>
       <div class="press__wrapper">
         <h2 class="press__main-text">
-          <span class="press__main-text-m">Engadget:</span> VW’s e-BULLI concept shows how your classic van
-          can become an EV.
+          <span class="press__main-text-m">Engadget:</span> VW’s e-BULLI concept
+          shows how your classic van can become an EV.
         </h2>
         <div class="press__button-wrapper">
           <div class="press__radio-wpapper">
-          <div class="press__radio">
-            <input id="radio-1" type="radio" name="radio" value="1" checked />
-            <label for="radio-1"></label>
+            <div class="press__radio">
+              <input id="radio-1" type="radio" name="radio" value="1" checked />
+              <label for="radio-1"></label>
+            </div>
+            <div class="press__radio">
+              <input id="radio-2" type="radio" name="radio" value="2" />
+              <label for="radio-2"></label>
+            </div>
           </div>
-          <div class="press__radio">
-            <input id="radio-2" type="radio" name="radio" value="2" />
-            <label for="radio-2"></label>
-          </div>
-        </div>
-          <button class="button press__button-press" type="button" id="btn-press">
+          <button
+            class="button press__button-press"
+            type="button"
+            id="btn-press"
+          >
             Читать
           </button>
         </div>
       </div>
     </section>
+    <!--Subscribe-->
+    <section class="subscribe">
+      <div class="subscribe__heading">
+        <h2 class="subscribe__title">Подписка</h2>
+        <p class="subscribe__subtitle">На новые спецвыпуски машин.</p>
 
+        <form class="subscribe__form">
+          <input
+            class="subscribe__form-firstname"
+            type="text"
+            id="firstname"
+            placeholder="имя"
+          />
+          <input
+            class="subscribe__form-secondname"
+            type="text"
+            id="secondname"
+            placeholder="фамилия"
+          />
+          <input
+            class="subscribe__form-email"
+            type="email"
+            id="email"
+            placeholder="почта"
+          />
+          <button
+            class="button subscribe__form-button"
+            type="submit"
+            id="btn-press"
+          >
+            подписка
+          </button>
+        </form>
+      </div>
+      <div class="subscribe__logo-wrapper">
+        <img
+          src="./images/logo.svg"
+          class="subscribe__logo"
+          alt="Auto-Magazin"
+        />
+        <p class="subscribe__copyright">&copy; Auto-Magazine 2021</p>
+      </div>
+    </section>
     <script src="./pages/index.js"></script>
   </body>
 </html>
