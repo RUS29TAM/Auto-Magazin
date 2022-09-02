@@ -572,7 +572,7 @@
   margin-right: 50px;
 }
 
-.button__slider-prev {
+.btn-prev {
   border: none;
   width: 42px;
   height: 34px;
@@ -584,11 +584,11 @@
   cursor: pointer;
 }
 
-.button__slider-prev:hover {
+.btn-prev:hover {
   opacity: 0.6;
 }
 
-.button__slider-fwd {
+.btn-fwd {
   border: none;
   width: 42px;
   height: 34px;
@@ -600,7 +600,7 @@
   cursor: pointer;
 }
 
-.button__slider-fwd:hover {
+.btn-fwd:hover {
   opacity: 0.6;
 }
 
@@ -660,7 +660,7 @@
     width: 280px;
     height: 204px;
   }
-  .button__slider-prev {
+  .btn-prev {
     border: none;
     width: 24px;
     height: 20px;
@@ -671,7 +671,7 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
-  .button__slider-fwd {
+  .btn-fwd {
     border: none;
     width: 24px;
     height: 20px;
