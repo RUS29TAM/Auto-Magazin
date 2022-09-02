@@ -626,6 +626,7 @@
   .slider {
     width: 320px;
     padding-top: 20px;
+    height: 300px;
   }
   .slider__wrapper {
     width: 320px;
@@ -808,5 +809,40 @@
   }
   .press__button-wrapper {
     width: 669px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .press {
+    width: 320px;
+    height: 287px;
+  }
+  .press__heading {
+    display: none;
+  }
+  .press__wrapper {
+    width: 320px;
+    padding: 0 20px;
+  }
+  .press__button-wrapper {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+  .press__main-text {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #e1fd2c;
+    padding-top: 20px;
+  }
+  .press__main-text-m {
+    font-weight: 400;
+  }
+  .press__button-press {
+    width: 88px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 28px;
   }
 }/*# sourceMappingURL=index.css.map */
