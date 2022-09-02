@@ -738,6 +738,7 @@
   line-height: 28px;
   text-align: center;
   color: #e1fd2c;
+  cursor: pointer;
 }
 .press__radio-wpapper {
   width: 40px;
@@ -845,4 +846,192 @@
     font-size: 14px;
     line-height: 28px;
   }
+}
+.subscribe {
+  width: 1440px;
+  height: 320px;
+  background: #191d2c;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: #e1fd2c 1px solid;
+  box-sizing: border-box;
+}
+.subscribe__heading {
+  width: 721px;
+  border-right: #e1fd2c 1px solid;
+}
+.subscribe__title {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 46px;
+  color: #e1fd2c;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.subscribe__subtitle {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  padding-left: 50px;
+  padding-top: 16px;
+  color: #e1fd2c;
+}
+.subscribe__form {
+  width: 340px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-rows: 2fr;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-top: 64px;
+  margin-bottom: 50px;
+}
+.subscribe__form-firstname {
+  background: #191d2c;
+  outline: #e1fd2c 1px solid;
+  outline-offset: -1px;
+  border: none;
+  grid-row: 1;
+  grid-column: 1;
+  color: #e1fd2c;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 30px;
+}
+.subscribe__form-firstname ::before {
+  background: #e1fd2c;
+}
+.subscribe__form-firstname::-moz-placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-firstname:-ms-input-placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-firstname::placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-secondname {
+  background: #191d2c;
+  outline: #e1fd2c 1px solid;
+  outline-offset: -1px;
+  border: none;
+  grid-row: 1;
+  grid-column: 2;
+  color: #e1fd2c;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 30px;
+}
+.subscribe__form-secondname::-moz-placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-secondname:-ms-input-placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-secondname::placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-email {
+  background: #191d2c;
+  outline: #e1fd2c 1px solid;
+  outline-offset: -1px;
+  border: none;
+  grid-row: 2;
+  grid-column: 1;
+  color: #e1fd2c;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 30px;
+  width: 256px;
+}
+.subscribe__form-email::-moz-placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-email:-ms-input-placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-email::placeholder {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #e1fd2c;
+  padding-left: 10px;
+}
+.subscribe__form-button {
+  width: 80px;
+  height: 32px;
+  justify-self: flex-end;
+  cursor: pointer;
+  background: #e1fd2c;
+  color: #191d2c;
+  border: #e1fd2c 1px solid;
 }/*# sourceMappingURL=index.css.map */
