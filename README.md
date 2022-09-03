@@ -6,4 +6,4 @@
  :white_check_mark: Настроить базовую функциональность.
  :white_check_mark: Стили писать на препроцессоре SCSS/SASS.
 
-Author :point_right: `RUS29TAM`
+Author :point_right: [`RUS29TAM`](https://github.com/RUS29TAM)
