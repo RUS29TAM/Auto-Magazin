@@ -78,15 +78,13 @@ function jornalDrive() {
     "https://www.drive.ru/news/volkswagen/5e7447bdec05c4b251000010.html";
 }
 
-/*-------------------------*/
-
 const sectionSubscribe = document.querySelector(".subscribe");
 // subscribe form
 const subscribeForm = sectionSubscribe.querySelector(".subscribe__form");
 const firstnameInput = subscribeForm.querySelector("#firstname");
 const secondNameInput = subscribeForm.querySelector("#secondname");
 const emailInput = subscribeForm.querySelector("#email");
-const btnSubscribe = subscribeForm.querySelector(".subscribe__form-button");
+const btnSubscribe = subscribeForm.querySelector("#btn-subscribe");
 
 firstnameInput.addEventListener("input", validateForm);
 secondNameInput.addEventListener("input", validateForm);
@@ -96,16 +94,21 @@ function validateForm() {
   const isNameFilled = firstnameInput.value.length > 0;
   const isSecondNameFilled = secondNameInput.value.length > 0;
   const isEmailFilled = emailInput.value.length > 0;
-
   const isFormValid = isNameFilled && isSecondNameFilled && isEmailFilled;
   btnSubscribe.disabled = !isFormValid;
+}
 
-  // document.getElementById("btn-subscribe").onclick = done;
-  btnSubscribe.addEventListener('onclick', done);
+subscribeForm.addEventListener("submit", done);
 
-  function done(evt) {
-    evt.preventDefault();
-    let done = document.getElementById("btn-subscribe");
-    done.innerHTML = "Готово!";
-  }
+function done(evt) {
+  evt.preventDefault();
+  let done = document.getElementById("btn-subscribe");
+  done.innerHTML = "Готово!";
+}
+
+const mainBtn = document.querySelector("#main-btn");
+mainBtn.addEventListener("click", mainInfo);
+
+function mainInfo() {
+  document.location.href = "#press";
 }

@@ -43,7 +43,7 @@
         <h3 class="content__heading">volkswagen T1</h3>
         <p class="content__title">Новая версия популярного микроавтобуса</p>
         <p class="content__subtitle">с электро двигателем</p>
-        <button class="button content__button" type="button" id="main-btn">
+        <button class="button content__button" type="button" id="main-btn" target="_blank" >
           подробнее
         </button>
       </div>
@@ -165,20 +165,23 @@
             type="text"
             id="firstname"
             placeholder="имя"
+            method="POST"
           />
           <input
             class="subscribe__form-secondname"
             type="text"
             id="secondname"
             placeholder="фамилия"
+            method="POST"
           />
           <input
             class="subscribe__form-email"
             type="email"
             id="email"
             placeholder="почта"
+            method="POST"
           />
-          <button
+          <button disabled
             class="button subscribe__form-button"
             type="submit"
             id="btn-subscribe"
