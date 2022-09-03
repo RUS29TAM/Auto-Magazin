@@ -57,10 +57,6 @@
       cursor: pointer;
       text-transform: uppercase;
       height: 30px;
-
-      ::before {
-        background: #e1fd2c;
-      }
     }
     &-firstname::placeholder {
       font-family: "Source Sans Pro";

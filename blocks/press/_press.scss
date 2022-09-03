@@ -36,7 +36,10 @@
     font-size: 30px;
     line-height: 42px;
     color: #e1fd2c;
-    padding-top: 50px;
+    padding-top: 25px;
+    max-width: 635px;
+    overflow: hidden;
+
 
     &-m {
       font-weight: 400;
@@ -164,7 +167,7 @@
       font-size: 16px;
       line-height: 27px;
       color: #e1fd2c;
-      padding-top: 20px;
+      padding-top: 10px;
     }
     &__main-text-m {
       font-weight: 400;

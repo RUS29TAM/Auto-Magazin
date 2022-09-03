@@ -719,7 +719,9 @@
   font-size: 30px;
   line-height: 42px;
   color: #e1fd2c;
-  padding-top: 50px;
+  padding-top: 25px;
+  max-width: 635px;
+  overflow: hidden;
 }
 .press__main-text-m {
   font-weight: 400;
@@ -835,7 +837,7 @@
     font-size: 16px;
     line-height: 27px;
     color: #e1fd2c;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .press__main-text-m {
     font-weight: 400;
@@ -901,9 +903,6 @@
   cursor: pointer;
   text-transform: uppercase;
   height: 30px;
-}
-.subscribe__form-firstname ::before {
-  background: #e1fd2c;
 }
 .subscribe__form-firstname::-moz-placeholder {
   font-family: "Source Sans Pro";

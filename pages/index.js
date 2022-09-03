@@ -55,3 +55,57 @@ document.querySelectorAll("#prev").forEach((btn) =>
     showSlider();
   })
 );
+
+document.getElementById("radio-1").onclick = jornalEngadget;
+jornalEngadget();
+function jornalEngadget() {
+  let jornal = document.getElementById("press");
+  jornal.innerHTML =
+    '<h2 class="press__main-text" id="press"><span class="press__main-text-m">Engadget:</span> VW’s e-BULLI concept  shows how your classic van can become an EV.</h2>';
+  let buttonPres = document.getElementById("form-press");
+  buttonPres.action =
+    "https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html";
+}
+
+document.getElementById("radio-2").onclick = jornalDrive;
+
+function jornalDrive() {
+  let jornal = document.getElementById("press");
+  jornal.innerHTML =
+    '<h2 class="press__main-text" id="press"><span class="press__main-text-m">Drive.ru:</span> Вэн Volkswagen e-Bulli скрестил классику с современной техникой.</h2>';
+  let buttonPres = document.getElementById("form-press");
+  buttonPres.action =
+    "https://www.drive.ru/news/volkswagen/5e7447bdec05c4b251000010.html";
+}
+
+/*-------------------------*/
+
+const sectionSubscribe = document.querySelector(".subscribe");
+// subscribe form
+const subscribeForm = sectionSubscribe.querySelector(".subscribe__form");
+const firstnameInput = subscribeForm.querySelector("#firstname");
+const secondNameInput = subscribeForm.querySelector("#secondname");
+const emailInput = subscribeForm.querySelector("#email");
+const btnSubscribe = subscribeForm.querySelector(".subscribe__form-button");
+
+firstnameInput.addEventListener("input", validateForm);
+secondNameInput.addEventListener("input", validateForm);
+emailInput.addEventListener("input", validateForm);
+
+function validateForm() {
+  const isNameFilled = firstnameInput.value.length > 0;
+  const isSecondNameFilled = secondNameInput.value.length > 0;
+  const isEmailFilled = emailInput.value.length > 0;
+
+  const isFormValid = isNameFilled && isSecondNameFilled && isEmailFilled;
+  btnSubscribe.disabled = !isFormValid;
+
+  // document.getElementById("btn-subscribe").onclick = done;
+  btnSubscribe.addEventListener('onclick', done);
+
+  function done(evt) {
+    evt.preventDefault();
+    let done = document.getElementById("btn-subscribe");
+    done.innerHTML = "Готово!";
+  }
+}

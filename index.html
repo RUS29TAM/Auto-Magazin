@@ -20,9 +20,9 @@
       <div class="header__block">
         <nav class="header__nav">
           <ul class="header__links">
-            <li><a href="#" class="header__link">Факты</a></li>
-            <li><a href="#" class="header__link">Галерея</a></li>
-            <li><a href="#" class="header__link">Пресса</a></li>
+            <li><a href="#facts" class="header__link">Факты</a></li>
+            <li><a href="#galery" class="header__link">Галерея</a></li>
+            <li><a href="#press" class="header__link">Пресса</a></li>
           </ul>
         </nav>
         <img src="./images/logo.svg" class="header__logo" alt="Auto-Magazin" />
@@ -50,7 +50,7 @@
       <div class="content__img"></div>
     </section>
     <!--description-->
-    <section class="description">
+    <section class="description" id="facts">
       <div class="description__main">
         <h2 class="description__main-text">
           <span class="description__main-text-m">VW T1 Electro: </span>
@@ -79,7 +79,7 @@
       </div>
     </section>
     <!--Slider-->
-    <div class="slider">
+    <div class="slider" id="galery">
       <div class="slider__wrapper">
         <div class="slider__items">
           <div class="slider__item">
@@ -125,9 +125,9 @@
     <section class="press">
       <h2 class="press__heading">Пресса</h2>
       <div class="press__wrapper">
-        <h2 class="press__main-text">
-          <span class="press__main-text-m">Engadget:</span> VW’s e-BULLI concept
-          shows how your classic van can become an EV.
+        <h2 class="press__main-text" id="press">
+          <!-- <span class="press__main-text-m">Engadget:</span> VW’s e-BULLI concept
+          shows how your classic van can become an EV. -->
         </h2>
         <div class="press__button-wrapper">
           <div class="press__radio-wpapper">
@@ -140,18 +140,21 @@
               <label for="radio-2"></label>
             </div>
           </div>
+          <form id="form-press">
           <button
             class="button press__button-press"
-            type="button"
+            type="submit"
             id="btn-press"
+            target="_blank"
           >
             Читать
           </button>
+        </form>
         </div>
       </div>
     </section>
     <!--Subscribe-->
-    <section class="subscribe">
+    <section class="subscribe" id="subscribe">
       <div class="subscribe__heading">
         <h2 class="subscribe__title">Подписка</h2>
         <p class="subscribe__subtitle">На новые спецвыпуски машин.</p>
@@ -178,7 +181,8 @@
           <button
             class="button subscribe__form-button"
             type="submit"
-            id="btn-press"
+            id="btn-subscribe"
+
           >
             подписка
           </button>
