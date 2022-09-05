@@ -629,7 +629,7 @@ table {
   grid-column: 2;
   grid-row: 1;
   box-sizing: content-box;
-  background-image: url(/images/wv.png);
+  background-image: url(./images/wv.png);
   box-sizing: border-box;
   background-size: cover;
   background-position: center;
@@ -966,7 +966,7 @@ table {
   border: none;
   width: 42px;
   height: 34px;
-  background: url(/images/arrow-prev.svg);
+  background: url(./images/arrow-prev.svg);
   box-sizing: border-box;
   background-size: cover;
   background-position: center;
@@ -982,7 +982,7 @@ table {
   border: none;
   width: 42px;
   height: 34px;
-  background: url(/images/arrow-fwd.svg);
+  background: url(./images/arrow-fwd.svg);
   box-sizing: border-box;
   background-size: cover;
   background-position: center;
@@ -1054,7 +1054,7 @@ table {
     border: none;
     width: 24px;
     height: 20px;
-    background: url(/images/arrow-prev.svg);
+    background: url(./images/arrow-prev.svg);
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -1065,7 +1065,7 @@ table {
     border: none;
     width: 24px;
     height: 20px;
-    background: url(/images/arrow-fwd.svg);
+    background: url(./images/arrow-fwd.svg);
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -1174,10 +1174,10 @@ table {
   position: absolute;
   left: 0;
   bottom: 1px;
-  background: url(/images/radio-off.svg) no-repeat;
+  background: url(./images/radio-off.svg) no-repeat;
 }
 .press__radio input[type=radio]:checked + label:before {
-  background: url(/images/radio-on.svg) no-repeat;
+  background: url(./images/radio-on.svg) no-repeat;
 }
 .press__button-press {
   border: 1px solid #e1fd2c;
