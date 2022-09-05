@@ -103,11 +103,11 @@
       position: absolute;
       left: 0;
       bottom: 1px;
-      background: url(./images/radio-off.svg) no-repeat;
+      background: url(../../images/r-off.svg) no-repeat;
     }
 
     input[type="radio"]:checked + label:before {
-      background: url(./images/radio-on.svg) no-repeat;
+      background: url(../../images/r-on.svg) no-repeat;
     }
   }
 
